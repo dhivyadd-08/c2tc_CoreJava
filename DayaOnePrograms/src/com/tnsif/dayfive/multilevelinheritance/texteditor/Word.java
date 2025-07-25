@@ -1,6 +1,6 @@
 package com.tnsif.dayfive.multilevelinheritance.texteditor;
 
-	public class Word extends Wordpad {
+	public class Word extends WordPad{
 	    private boolean spellCheckEnabled;
 
 	    public Word() {

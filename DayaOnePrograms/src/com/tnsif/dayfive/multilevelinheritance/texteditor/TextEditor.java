@@ -1,6 +1,7 @@
 package com.tnsif.dayfive.multilevelinheritance.texteditor;
 
 public class TextEditor {
+
 	public static void main(String[] args) {
 		Word word = new Word();
 
@@ -17,4 +18,3 @@ public class TextEditor {
 		word.spellCheck();
 	}
 }
-
