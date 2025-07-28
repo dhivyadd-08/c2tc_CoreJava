@@ -1,20 +1,26 @@
 package com.tnsif.dayfive.multilevelinheritance.texteditor;
 
-public class TextEditor {
+public class Notepad {
+    protected String content;
 
-	public static void main(String[] args) {
-		Word word = new Word();
+    public Notepad() {
+        this.content = "";
+    }
 
-		word.write("Hello, ");
-		word.formatText(true);
-		word.write("World!");
-		word.displayContent();
+    public void write(String text) {
+        content += text; //content = content+text
+    }
 
-		word.spellCheck();
-
-		System.out.println("Is text in Wordpad bold? " + word.isBold());
-		System.out.println("Disabling spell check in Word.");
-		word.enableSpellCheck(false);
-		word.spellCheck();
-	}
+    public void displayContent() {
+        System.out.println("Notepad Content: " + content);
+    }
+    
+    
+    /*
+     * returntype funcName()
+     * {
+     * 		//statement
+     * }
+     * 
+     * */
 }
